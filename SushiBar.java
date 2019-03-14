@@ -15,10 +15,8 @@ public class SushiBar {
     public static int maxOrder = 10;
     public static int waitressWait = 50; // Used to calculate the time the waitress spends before taking the order
     public static int customerWait = 2000; // Used to calculate the time the customer spends eating
-    public static int doorWait = 40; // Used to calculate the interval at which the door tries to create a customer 100
+    public static int doorWait = 100; // Used to calculate the interval at which the door tries to create a customer 100
     public static boolean isOpen = true; 
-    // THE isOpen SHOULD BE A SYNCRONIZEDBOOLEAN
-    // PROBLEM: WHEN DOOR GETS NOTIFIED AFTER SUSHIBAR IS CLOSED IT STILL ENTER A CUSTOMER..
 
     //Creating log file
     private static File log;
